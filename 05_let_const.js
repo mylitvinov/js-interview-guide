@@ -4,13 +4,13 @@
 // {
 //   a = 'New Variable A'
 //   let b = 'Local Variable B'
-//   console.log('Scope A', a)
-//   console.log('Scope B', b)
+//   console.log('Scope A', a) //Scope A New Variable A
+//   console.log('Scope B', b) // Local Variable B
 //   // console.log('Scope C', c)
 //   // let c = 'Something'
 // }
-// console.log('A:', a)
-// console.log('B:', b)
+// console.log('A:', a) // New Variable A
+// console.log('B:', b) // Variable b
 
 // Const
 const PORT = 8080
@@ -20,8 +20,8 @@ array[0] = 'JS'
 console.log(array)
 
 const obj = {}
-obj.name = 'Vladilen'
-obj.age = 26
+obj.name = 'Max'
+obj.age = 33
 
 console.log(obj)
 
