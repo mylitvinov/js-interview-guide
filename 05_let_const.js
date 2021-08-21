@@ -17,15 +17,15 @@ const PORT = 8080
 const array = ['Javascript', 'is', 'Awesome']
 array.push('!')
 array[0] = 'JS'
-console.log(array)
+console.log(array) // [ 'JS', 'is', 'Awesome', '!' ]
 
 const obj = {}
 obj.name = 'Max'
 obj.age = 33
 
-console.log(obj)
+console.log(obj) // { name: 'Max', age: 33 }
 
 delete obj.name
 
-console.log(obj)
+console.log(obj) // { age: 33 }
 

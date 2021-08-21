@@ -33,7 +33,7 @@
 
 // setTimeout
 
-const fib = [1, 2, 3, 5, 8, 13]
+const fib = [1, 2, 3, 5, 8, 13];
 
 // старый способ с var в цикле, вызываем функцию сама себя
 // for (var i = 0; i < fib.length; i++) {
@@ -43,10 +43,18 @@ const fib = [1, 2, 3, 5, 8, 13]
 //     }, 1500)
 //   })(i)
 // }
-// c let проще: 
+// c let проще:
 for (let i = 0; i < fib.length; i++) {
-     setTimeout(function () {
-      console.log(`fib[${i}] = ${fib[i]}`)
-    }, 1500)
-  }
+  setTimeout(function () {
+    console.log(`fib[${i}] = ${fib[i]}`);
+  }, 1500);
+}
 
+/* 
+fib[0] = 1;
+fib[1] = 2;
+fib[2] = 3;
+fib[3] = 5;
+fib[4] = 8;
+fib[5] = 13;
+*/

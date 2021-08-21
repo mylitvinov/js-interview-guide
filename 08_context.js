@@ -16,14 +16,18 @@ const person = {
 
 // ========
 
-// function Person(name, age) {
-//   this.name = name
-//   this.age = age
-//
-//   console.log(this)
-// }
-//
-// const elena = new Person('Elena', 20)
+function Person(name, age) {
+  this.name = name
+  this.age = age
+
+  // console.log(this)
+}
+
+
+
+ const elena = new Person('Elena', 20)
+
+ console.log(elena) //Person { name: 'Elena', age: 20 }
 
 // ======== Явный
 // function logThis() {
