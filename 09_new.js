@@ -3,8 +3,8 @@ function Cat(color, name) {
   this.name = name
 }
 
-// const cat = new Cat('black', 'KOT')
-// console.log(cat)
+const cat = new Cat('black', 'KOT')
+console.log(cat) //Cat { color: 'black', name: 'KOT' }
 
 // function myNew(constructor, ...args) {
 //   const obj = {}
@@ -15,6 +15,6 @@ function Cat(color, name) {
 // const cat = myNew(Cat, 'black', 'KOT')
 // console.log(cat)
 
-const cat = new Cat()
-console.log(cat)
+// const cat = new Cat()
+// console.log(cat)
 

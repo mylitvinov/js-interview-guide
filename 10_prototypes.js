@@ -12,11 +12,11 @@ Cat.prototype.voice = function() {
 
 const cat = new Cat('Kot', 'white')
 
-// console.log(Cat.prototype)
-// console.log(cat)
-// console.log(cat.__proto__ === Cat.prototype)
-// console.log(cat.constructor)
-// cat.voice()
+// console.log(Cat.prototype) // { voice: [Function (anonymous)] }
+// console.log(cat) // Cat { name: 'Kot', color: 'white' }
+// console.log(cat.__proto__ === Cat.prototype) //true
+// console.log(cat.constructor) // [Function: Cat]
+// cat.voice() // Cat Kot says myay
 
 // ============
 function Person() {}
@@ -24,14 +24,16 @@ Person.prototype.legs = 2
 Person.prototype.skin = 'white'
 
 const person = new Person()
-person.name = 'Vladilen'
+person.name = 'Maxim'
 
-// console.log('skin' in person)
-// console.log(person.legs)
-// console.log(person.name)
+console.log(person) //Person { name: 'Maxim' }
 
-// console.log(person.hasOwnProperty('name'))
-// console.log(person.hasOwnProperty('skin'))
+console.log('skin' in person) //true
+console.log(person.legs) // 2
+console.log(person.name) // 'Maxim'
+
+console.log(person.hasOwnProperty('name')) // true
+console.log(person.hasOwnProperty('skin')) // false
 
 // Object.create()
 var proto = {year: 2019}
