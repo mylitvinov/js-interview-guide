@@ -12,24 +12,24 @@
 // helloToSofia()
 // helloToMax()
 
-// function createFrameworkManager() {
-//   const fwArr = ['Angular', 'React']
+function createFrameworkManager() {
+  const fwArr = ['Angular', 'React']
 
-//   return {
-//     print: function() {
-//       console.log(fwArr.join(' '))
-//     },
-//     add: function(framework) {
-//       fwArr.push(framework)
-//     }
-//   }
-// }
+  return {
+    print: () => {
+      console.log(fwArr.join(' '))
+    },
+    add:(framework) => {
+      fwArr.push(framework)
+    }
+  }
+}
 
-//  const manager = createFrameworkManager()
-//  console.log(manager)
-// manager.print()
-//  manager.add('VueJS')
-//  manager.print()
+ const manager = createFrameworkManager()
+ console.log(manager) // { print: [Function: print], add: [Function: add] }
+manager.print() // Angular React
+ manager.add('VueJS') 
+ manager.print() //Angular React VueJS
 
 // setTimeout
 
